@@ -1,0 +1,17 @@
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: dosomethingjob
+  namespace: sqldevops
+spec:
+  template:
+    metadata:
+      name: dosomethingjob
+    spec:
+      containers:
+      - name: dosomethingjob
+        image: tigervin/dosomethingjob
+        imagePullPolicy: Always
+        command: ["/bin/bash", "-c", "./dosomething.sh"]
+      restartPolicy: Never
