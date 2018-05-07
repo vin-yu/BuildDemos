@@ -1,0 +1,1 @@
+/opt/mssql-tools/bin/sqlcmd -Smssql -Usa -PSqlDevOps2017 -i ./dosomething.sql
