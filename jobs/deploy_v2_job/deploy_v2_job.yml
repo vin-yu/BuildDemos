@@ -1,0 +1,16 @@
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: deploy-v2
+spec:
+  template:
+    metadata:
+      name: deploy-v2
+    spec:
+      containers:
+      - name: deploy-v2
+        image: tigervin/deploy_v2_job
+        imagePullPolicy: Always
+        command: ["/bin/bash", "-c", "./deploy_v2_job.sh"]
+      restartPolicy: Never

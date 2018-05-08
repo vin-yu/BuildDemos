@@ -1,0 +1,1 @@
+flyway '-url=jdbc:sqlserver://mssql-deployment;database=WideWorldImporters' '-user=sa' '-password=1234qwerASDF' migrate
