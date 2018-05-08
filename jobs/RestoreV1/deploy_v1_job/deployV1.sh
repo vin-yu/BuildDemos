@@ -1,0 +1,1 @@
+/opt/mssql-tools/bin/sqlcmd -Smssql-deployment -Usa -P1234qwerASDF -i ./deployV1.sql
